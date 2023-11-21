@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </head>
-  <body>
-    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+  <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+
+  <div x-data="{isOpen:1,}">
     <section>
       <button @click="isOpen = 1">bouton 1</button>
       <p x-show="isOpen === 1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis est tempore culpa.
@@ -17,5 +20,7 @@
         Ex rerum esse laboriosam.</p>
     </section>
     
-  </body>
+  </div>
+</body>
+
 </html>
