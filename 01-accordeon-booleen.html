@@ -19,5 +19,13 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolorum suscipit corrupti ipsam quia qui, mollitia et aspernatur quasi placeat. Dolores non sapiente consequuntur sunt vel culpa ut incidunt officia.
       </p>
     </div>
+
+    <div x-data="{ expanded: false }">
+      <button @click="expanded = ! expanded">Toggle Content</button>
+    
+      <p x-show="expanded" x-collapse.min.50px>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam molestias impedit praesentium minus, eaque assumenda delectus exercitationem veritatis consequatur sapiente aliquid provident ipsam esse nulla architecto repellat tempore soluta nisi possimus! Libero, inventore aut? Ipsa provident, magni illum at recusandae sit aperiam, corporis, dolor neque laborum saepe obcaecati. Cum eos velit harum illo hic laborum odit rem ipsam quos voluptas.
+      </p>
+    </div>
   </body>
 </html>
