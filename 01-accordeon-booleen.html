@@ -15,7 +15,7 @@
     <div x-data="{ expanded: false }">
       <button @click="expanded = ! expanded">Toggle Content</button>
     
-      <p x-show="expanded" x-collapse>
+      <p x-show="expanded" x-collapse.duration.1000ms>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolorum suscipit corrupti ipsam quia qui, mollitia et aspernatur quasi placeat. Dolores non sapiente consequuntur sunt vel culpa ut incidunt officia.
       </p>
     </div>
