@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>Onglets</h1>
-
+<div id="onglets" x-data="{ouvert : 1,}">
     <ul role="tablist">
       <li role="tab" :class="{actif:(ouvert === 1)}" @click="ouvert = 1">Onglet 1</li>
       <li role="tab" :class="{actif:(ouvert === 2)}" @click="ouvert = 2">Onglet 2</li>
@@ -18,9 +18,7 @@
 
   <div role="tabpanel" x-show="ouvert === 1">
     <h1>Onglets 1</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Expedita omnis error minima voluptas totam provident dolorum quos consectetur, 
-            beatae repellendus vitae consequatur laboriosam repellat nam!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita omnis error minima voluptas totam provident dolorum quos consectetur, beatae repellendus vitae consequatur laboriosam repellat nam!</p>
   </div>
 
   <div role="tabpanel" x-show="ouvert === 2">
@@ -31,8 +29,7 @@
   <div role="tabpanel" x-show="ouvert === 3">
     <h1>Onglet 3</h1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore velit harum, eius quasi dolores perferendis! Dolorum dicta doloribus temporibus. Voluptates sequi est velit quod aliquid, dolore laborum magni vel qui nesciunt corporis nulla.</p>
-  </div>  
-
-
+  </div> 
+</div>
   </body>
 </html>
