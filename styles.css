@@ -29,3 +29,7 @@
     background-color: bisque;
     border-radius: 5%;
   }
+
+.onglets > div {
+    position: absolute;
+}
