@@ -18,5 +18,10 @@
       <p x-show="isOpen" x-collapse>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione accusamus architecto voluptatibus accusantium ad magnam minima! Quas quod distinctio placeat excepturi ab rerum facere. Eum labore aut voluptatum enim tenetur?</p>
     </section>
   
+    <section x-data="{isOpena:true}">
+      <button @click="isOpena=! isOpena">bouton 2</button>
+      <p x-show="isOpena" x-collapse>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cumque inventore asperiores error. Magni, tempore molestias illum et odio, iure ea enim atque quia autem necessitatibus. Dolorum et impedit ullam!</p>
+    </section>
+    
   </body>
 </html>
