@@ -10,3 +10,19 @@
     overflow: hidden;
 
   }
+
+.accordeon li.actif {
+    width: 317px;
+
+  }
+
+.accordeon li figure {
+    display: flex;
+    width: 317px;
+    margin: 0;
+
+  }
+
+.accordeon li figure figcaption{
+    padding: 10px;
+  }
