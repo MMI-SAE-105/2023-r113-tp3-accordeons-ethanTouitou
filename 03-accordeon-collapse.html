@@ -12,7 +12,11 @@
   </head>
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
-
     
+    <section x-data="{isOpen:true,}">
+      <button @click="isOpen=! isOpen">bouton 1</button>
+      <p x-show="isOpen" x-collapse>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione accusamus architecto voluptatibus accusantium ad magnam minima! Quas quod distinctio placeat excepturi ab rerum facere. Eum labore aut voluptatum enim tenetur?</p>
+    </section>
+  
   </body>
 </html>
