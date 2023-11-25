@@ -10,5 +10,20 @@
   </head>
   <body>
     <h1>Accordéon horizontal</h1>
+
+    <ul class="accordeon" x-data="{ouvert:2}">
+      <li :class="{actif:(ouvert === 1)}" @click="ouvert = 1">
+        <figure>
+          <img src="https://picsum.photos/100?random=1" alt="" width="102">
+          <figcaption>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </figcaption>
+        </figure>
+      </li>
+
+      <li></li>
+      <li></li>
+    </ul>
   </body>
 </html>
