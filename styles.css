@@ -8,6 +8,7 @@
 .accordeon li {
     width: 107px;
     overflow: hidden;
+    transition: width 0.5s;
 
   }
 
