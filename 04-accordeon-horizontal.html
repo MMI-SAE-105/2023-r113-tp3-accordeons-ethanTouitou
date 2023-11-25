@@ -22,7 +22,7 @@
         </figure>
       </li>
 
-      <li>
+      <li :class="{actif:(ouvert === 2)}" @click="ouvert = 2">
         <figure>
           <img src="https://picsum.photos/100?random=2" alt="" width="102">
           <figcaption>
@@ -32,7 +32,7 @@
         </figure>
       </li>
       
-      <li>
+      <li :class="{actif:(ouvert === 3)}" @click="ouvert = 3">
         <figure>
           <img src="https://picsum.photos/100?random=3" alt="" width="102">
           <figcaption>
